@@ -1,0 +1,32 @@
+<div class = "container">
+<table class = "table">
+  <tr>
+    <th>Name</th>
+    <th>Gender</th>
+    <th>Competency Level</th>
+    <th>Salary</th>
+    <th>Update Employee</th>
+    <th>Delete Employee</th>
+  </tr>
+  <tr *ngFor = "let employee of employees">
+    <td>
+      {{employee.employeeName}}
+    </td>
+    <td>
+      {{employee.employeeGender}}
+    </td>
+    <td>
+      {{employee.employeeCompetencyLevel}}
+    </td>
+    <td>
+      {{employee.employeeSalary}}
+    </td>
+    <td>
+      <button class = "btn btn-success" [routerLink] = "['/updateEmployee' , employee.employeeId]">Update</button>
+    </td>
+    <td>
+      <button class = "btn btn-danger" (click) = "deleteEmployee(employee.employeeId)">Delete</button>
+    </td>
+  </tr>
+</table>
+</div>

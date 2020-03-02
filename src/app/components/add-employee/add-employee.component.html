@@ -1,0 +1,39 @@
+<div class="container">
+  <h3 class="m-4">Employee Form</h3>
+  <form [formGroup] = "employeeForm" (ngSubmit) = "employeeFormSubmit()">
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" formControlName = "name"  placeholder="Enter your name">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Gender</label>
+      <div class="col-sm-10">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" formControlName = "gender" type="radio" name="gender" id="inlineRadioMale" value="Male">
+          <label class="form-check-label" for="inlineRadioMale">Male</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" formControlName = "gender" type="radio" name="gender" id="inlineRadioFemale" value="Female">
+          <label class="form-check-label" for="inlineRadioFemale">Female</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Competency Level</label>
+      <div class="col-sm-10">
+          <input type="text" formControlName = "competencyLevel" class="form-control" placeholder="Enter the level from C1 to C12">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Salary</label>
+      <div class="col-sm-10">
+        <input type="text" formControlName = "salary" class="form-control" placeholder="Enter your Salary">
+      </div>
+    </div>
+    <div class = "form-group-row">
+      <button type = "submit" class = "mx-5 btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div>
