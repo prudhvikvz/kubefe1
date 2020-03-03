@@ -533,7 +533,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
 var environment = {
     production: false,
-    serverUrl: 'http://34.93.239.26:8080'
+    serverUrl: 'http://34.93.244.126:8080'
 };
 
 
